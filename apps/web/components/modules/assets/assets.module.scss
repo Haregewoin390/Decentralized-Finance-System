@@ -1,0 +1,19 @@
+.layout {
+  min-height: 27.5em;
+  .priceAndchange {
+    display: flex;
+    .price {
+      margin-right: 0.8em;
+    }
+  }
+  .assets {
+    display: flex;
+    flex-direction: row;
+
+    .name {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.6em;
+    }
+  }
+}

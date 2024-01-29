@@ -1,0 +1,66 @@
+@import './fonts.scss';
+html:root {
+  --white_500: #fcfcfc;
+  --white_900: #ffffff;
+  --green: #00ac7a;
+  --blue_900: #0e2d66;
+  --blue_100: #0e2d6669;
+  --blue_500: #051c45;
+  --gray_500: #aeb5c8;
+  --black_200: #0000002f;
+  --red: #ff0033;
+
+  --cardGradiant: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.0444) 0%,
+    rgba(255, 255, 255, 0.0348) 100%
+  );
+}
+
+html:root {
+  --text_min: 8px;
+  --text_xsm: 10px;
+  --text_xs: 12px;
+  --text_sm: 14px;
+  --text_tiny: 16px;
+  --text_base: 20px;
+  --text_lg: 24px;
+  --text_xl: 32px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // background: -webkit-radial-gradient(center, var(--blue_900), var(--blue_500))
+  //   no-repeat;
+  // background: -moz-radial-gradient(center, var(--blue_900), var(--blue_500))
+  //   no-repeat;
+  // background: radial-gradient(
+  //     ellipse at center,
+  //     var(--blue_900),
+  //     var(--blue_500)
+  //   )
+  //   no-repeat;
+  // background-size: cover;
+  min-height: 100%;
+  font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--text_base);
+}
+
+* {
+  user-select: none;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+}
+
+.ant-modal-content {
+  padding: 0px !important;
+}

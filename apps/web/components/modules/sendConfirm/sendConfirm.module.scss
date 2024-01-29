@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  .flexRow {
+    display: flex;
+    justify-content: space-between;
+    //width: 70%;
+    .flexColumn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .secondryCurrency {
+        font-size: var(--text_base);
+      }
+      .primaryCurrency {
+        font-size: var(--text_base);
+      }
+    }
+    .button {
+      min-width: 45%;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+"use client";
+import { Layout } from "antd";
+import CommonLayout from "components/layouts/common";
+
+import styles from "./loading.module.scss";
+
+const { Content } = Layout;
+
+export default function Loading(): JSX.Element {
+  return (
+    <CommonLayout>
+      <Layout style={{ minHeight: "100vh" }} className={styles.body}>
+        <svg
+          width="38"
+          height="90"
+          viewBox="0 0 38 90"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className={styles.image}
+        >
+          {/* rectangle */}
+          <g filter="url(#filter0_d_87_34)" className={styles.rectangle}>
+            <mask id="path-1-inside-1_87_34" fill="white">
+              <path d="M1.14819 60.5524C1.14819 59.1585 2.28147 58.0286 3.67945 58.0286H34.3076C35.7056 58.0286 36.8389 59.1585 36.8389 60.5524V85.2857C36.8389 86.6795 35.7056 87.8095 34.3076 87.8095H3.67945C2.28147 87.8095 1.14819 86.6795 1.14819 85.2857V60.5524Z" />
+            </mask>
+            <path
+              d="M1.14819 60.5524C1.14819 59.1585 2.28147 58.0286 3.67945 58.0286H34.3076C35.7056 58.0286 36.8389 59.1585 36.8389 60.5524V85.2857C36.8389 86.6795 35.7056 87.8095 34.3076 87.8095H3.67945C2.28147 87.8095 1.14819 86.6795 1.14819 85.2857V60.5524Z"
+              strokeWidth="15.1875"
+              shapeRendering="crispEdges"
+              mask="url(#path-1-inside-1_87_34)"
+            />
+          </g>
+          <g className={styles.triangle}>
+            <mask id="path-2-inside-2_87_34" fill="white">
+              <path d="M32.3115 10.3108C33.7927 8.41734 36.8387 9.46169 36.8387 11.863V52.4761C36.8387 53.87 35.7054 54.9999 34.3074 54.9999H2.5357C0.427702 54.9999 -0.756683 52.5812 0.539804 50.9239L32.3115 10.3108Z" />
+            </mask>
+            <path
+              d="M32.3115 10.3108C33.7927 8.41734 36.8387 9.46169 36.8387 11.863V52.4761C36.8387 53.87 35.7054 54.9999 34.3074 54.9999H2.5357C0.427702 54.9999 -0.756683 52.5812 0.539804 50.9239L32.3115 10.3108Z"
+              strokeWidth="15.1875"
+              mask="url(#path-2-inside-2_87_34)"
+            />
+          </g>
+          {/* //line */}
+          <g filter="url(#filter1_d_87_34)" className={styles.line}>
+            <path d="M29.7197 4.01904C29.7197 2.90396 31.4196 2 33.5166 2C35.6136 2 37.3135 2.90396 37.3135 4.01904V85.7903C37.3135 86.9054 35.6136 87.8094 33.5166 87.8094C31.4196 87.8094 29.7197 86.9054 29.7197 85.7903V4.01904Z" />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d_87_34"
+              x="0.135693"
+              y="58.0286"
+              width="37.7157"
+              height="31.806"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dy="1.0125" />
+              <feGaussianBlur stdDeviation="0.50625" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_87_34"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_87_34"
+                result="shape"
+              />
+            </filter>
+            <filter
+              id="filter1_d_87_34"
+              x="28.201"
+              y="0.987499"
+              width="9.61875"
+              height="87.8343"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dx="-0.50625" />
+              <feGaussianBlur stdDeviation="0.50625" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0.0217708 0 0 0 0 0.0624324 0 0 0 0 0.1375 0 0 0 1 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_87_34"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_87_34"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </Layout>
+    </CommonLayout>
+  );
+}

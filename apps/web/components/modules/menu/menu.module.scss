@@ -1,0 +1,24 @@
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  .image {
+    object-fit: contain;
+    position: relative !important;
+    height: 5em !important;
+    width: 6em;
+  }
+  .title {
+    align-self: center;
+    position: absolute;
+    left: 35%;
+    margin-top: 1.3em;
+  }
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 125px);
+}

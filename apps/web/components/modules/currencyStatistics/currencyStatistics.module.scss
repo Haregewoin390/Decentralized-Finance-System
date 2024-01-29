@@ -1,0 +1,14 @@
+.container {
+  margin-top: 0.4em;
+  .info {
+    display: flex;
+    justify-content: space-between;
+    .priceChange {
+      display: flex;
+      flex-direction: column;
+      .price {
+        align-self: flex-end;
+      }
+    }
+  }
+}

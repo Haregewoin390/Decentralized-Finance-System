@@ -1,0 +1,29 @@
+.layout {
+  min-height: 14em !important;
+  .balance {
+    .amount {
+      font-size: var(--text_lg);
+      margin-left: 0.3em;
+    }
+  }
+  .walletaddress {
+    .walletinfo {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1em;
+      .icons {
+        margin-left: 2.5em;
+        .icon {
+          margin-right: 0.7em;
+        }
+      }
+    }
+  }
+  .line {
+    border-left: 0.15em solid var(--gray_500);
+    border-radius: 20%;
+    height: 6em;
+    margin-left: 1em;
+    margin-right: 1.5em;
+  }
+}

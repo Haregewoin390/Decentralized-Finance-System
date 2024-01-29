@@ -1,0 +1,46 @@
+.container {
+  width: 35em;
+  margin-top: 2em;
+  height: 70%;
+  .layouts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      margin-top: 0.5em;
+    }
+    .description {
+      max-width: 25ch;
+      text-align: center;
+    }
+    .progress {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2em;
+      margin-bottom: 1em;
+      .circle {
+        margin: 0.2em;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--gray_500);
+      }
+      .step {
+        margin: 0.1em 0.2em;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: var(--green);
+      }
+    }
+    .button {
+      margin-bottom: 2em;
+      width: 50%;
+      min-height: 7em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

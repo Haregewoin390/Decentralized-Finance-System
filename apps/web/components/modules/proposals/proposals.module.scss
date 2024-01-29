@@ -1,0 +1,14 @@
+.container {
+  max-width: 70em;
+  .createProposalButton {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  .layouts {
+    display: flex;
+    flex-direction: column;
+    .title {
+      margin-bottom: 2em;
+    }
+  }
+}

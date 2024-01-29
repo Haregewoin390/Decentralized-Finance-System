@@ -1,0 +1,25 @@
+.container {
+  max-width: 40em;
+  margin-top: 5em;
+  margin-left: 2em;
+  .layout {
+    // width: 0%;
+
+    min-height: 25em;
+    display: flex;
+    flex-direction: column;
+    .swapFrom {
+      display: flex;
+      .selectAssestButton {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        display: inline-flex;
+      }
+      .selectAssestInput {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 85%;
+      }
+    }
+  }
+}

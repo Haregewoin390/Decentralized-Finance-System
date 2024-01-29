@@ -1,0 +1,23 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4%;
+  position: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  .logo {
+    max-width: fit-content;
+    margin-bottom: 1.4em;
+    .image {
+      object-fit: contain;
+      width: 120% !important;
+      position: relative !important;
+      height: 120% !important;
+    }
+  }
+}

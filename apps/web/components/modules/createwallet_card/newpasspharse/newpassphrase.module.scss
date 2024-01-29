@@ -1,0 +1,74 @@
+.layouts {
+  width: 35em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    margin-bottom: 0.3em;
+    font-size: var(--text_xl);
+  }
+  .description {
+    max-width: 42ch;
+    text-align: center;
+  }
+  .passphrase {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    min-width: 75%;
+    margin: 2em;
+    .wordinputfield {
+      min-height: 2em;
+      border: 2px solid var(--green);
+      border-radius: 8px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      min-width: 10ch;
+      .index {
+        margin-left: 10%;
+      }
+      .content {
+        margin-left: 3%;
+      }
+    }
+  }
+
+  .extraWord {
+    align-self: flex-start;
+    margin-left: 4em;
+    .extraWordSwitch {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .extraWordLabel {
+      margin-right: 0.8em;
+    }
+    .extraWordInput {
+      max-width: 10em;
+      max-height: 3em;
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 0.2em;
+    margin-bottom: 2.5em;
+    margin-right: 15%;
+    .button {
+      margin-left: 1em;
+      width: 10em;
+    }
+  }
+}
